@@ -4,7 +4,7 @@ services:
     image: alpine:latest
     working_dir: /papermc
     command: ["./mc.sh"]
-    restart: never
+    restart: no
     ports:
       - "25565:25565"
     volumes:
