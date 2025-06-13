@@ -23,4 +23,4 @@ echo "eula=true" > eula.txt
 
 # run server
 JAVA_OPTS="-Xms8192M -Xmx8192M"
-exec java -server $JAVA_OPTS -jar "paper.jar" nogui
+#exec java -server $JAVA_OPTS -jar "paper.jar" nogui
