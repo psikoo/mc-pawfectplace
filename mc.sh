@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Setup
-echo $(pwd)
-apk update && apk add libstdc++ && apk add openjdk21-jre && apk add bash && apk add wget && apk add jq
-mkdir /papermc
 cd papermc
 
 # Env
