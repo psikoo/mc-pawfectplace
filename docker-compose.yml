@@ -2,6 +2,6 @@ services:
   papermc:
     container_name: papermc
     image: mc:1
-    restart: no
+    restart: always
     ports:
       - "25565:25565"
