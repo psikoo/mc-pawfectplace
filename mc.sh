@@ -18,7 +18,7 @@ else
   echo "No stable build for version $MC_VERSION found :("
 fi
 
-echo "eula=${EULA:-false}" > eula.txt
+echo "eula=true" > eula.txt
 
 JAVA_OPTS="-Xms8192M -Xmx8192M"
 exec java -server $JAVA_OPTS -jar "paper.jar" nogui
