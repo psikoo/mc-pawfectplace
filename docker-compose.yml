@@ -9,4 +9,5 @@ services:
       - "25565:25565"
     volumes:
       - ./papermc:/papermc
-      - ./plugins:/papermc/plugins
+      - ./assets/server.properties:/papermc/server.properties
+      - ./assets/plugins:/papermc/plugins
