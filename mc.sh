@@ -12,21 +12,14 @@ if [ "$LATEST_BUILD" != "null" ]; then
   PAPERMC_URL="https://api.papermc.io/v2/projects/${PROJECT}/versions/${MC_VERSION}/builds/${LATEST_BUILD}/downloads/${JAR_NAME}"
 
   # Download the latest Paper version
-  curl -o server.jar $PAPERMC_URL
+  curl -o paper.jar $PAPERMC_URL
   echo "Download completed"
 else
   echo "No stable build for version $MC_VERSION found :("
 fi
 
+java -Xms8192M -Xmx8192M -jar paper.jar nogui
+echo "eula=${EULA:-false}" > eula.txt
 
-# Update eula.txt with current setting
-#echo "eula=${EULA:-false}" > eula.txt
-
-# Add RAM options to Java options if necessary
-#if [[ -n $MC_RAM ]]
-#then
-#  JAVA_OPTS="-Xms${MC_RAM} -Xmx${MC_RAM} $JAVA_OPTS"
-#fi
-
-# Start server
-#exec java -server $JAVA_OPTS -jar "$JAR_NAME" nogui
+JAVA_OPTS="-Xms8192M -Xmx8192M"
+exec java -server $JAVA_OPTS -jar "paper.jar" nogui
