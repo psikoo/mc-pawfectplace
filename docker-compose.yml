@@ -1,12 +1,7 @@
 services:
   papermc:
     container_name: papermc
-    image: alpine:latest
-    working_dir: /papermc
-    command: ["bash", "./mc.sh"]
+    image: mc:1
     restart: no
     ports:
       - "25565:25565"
-    volumes:
-      - /papermc
-      - ./mc.sh:/papermc/mc.sh
