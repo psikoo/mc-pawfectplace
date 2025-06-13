@@ -2,6 +2,10 @@ services:
   papermc:
     container_name: papermc
     image: mc:1
-    restart: always
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
     ports:
       - "25565:25565"
+    volumes:
+      - ./papermc:/papermc
