@@ -3,7 +3,7 @@ services:
     container_name: papermc
     image: alpine:latest
     working_dir: /papermc
-    command: ["./mc.sh"]
+    command: ["bash", "./mc.sh"]
     restart: no
     ports:
       - "25565:25565"
