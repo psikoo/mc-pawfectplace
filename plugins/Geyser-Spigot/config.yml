@@ -4,4 +4,4 @@ bedrock:
     #address: 0.0.0.0 
 
     # The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.
-    port: 19132 
+    port: 19133 
