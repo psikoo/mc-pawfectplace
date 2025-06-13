@@ -1,6 +1,7 @@
 FROM alpine:latest
 
 COPY mc.sh .
+COPY download.sh .
 RUN apk update \
     && apk add libstdc++ \
     && apk add openjdk21-jre \

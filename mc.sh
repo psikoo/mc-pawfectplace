@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cd papermc
 
 # Env
@@ -20,6 +19,9 @@ fi
 
 # Set eula
 echo "eula=true" > eula.txt
+
+# Download plugins
+bash ./download.sh
 
 # run server
 JAVA_OPTS="-Xms8192M -Xmx8192M"
