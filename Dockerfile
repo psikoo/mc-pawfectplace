@@ -9,7 +9,6 @@ RUN apk update \
     && apk add jq \
     && mkdir /papermc
 
-CMD ["bash", "./mc.sh"]
 
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
