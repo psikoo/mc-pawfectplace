@@ -2,7 +2,7 @@ services:
   papermc:
     container_name: papermc
     image: alpine:latest
-    command: ["ls -la"]
+    command: ["ls"]
     restart: always
     ports:
       - "25565:25565"
