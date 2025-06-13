@@ -7,5 +7,5 @@ services:
     ports:
       - "25565:25565"
     volumes:
-      - mc.sh:.
+      - ./mc.sh:.
       - /papermc
