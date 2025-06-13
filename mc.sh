@@ -21,7 +21,8 @@ fi
 echo "eula=true" > eula.txt
 
 # Download plugins
-bash ./download.sh
+bash ../download.sh
+#TODO not downloading no such file or dir
 
 # run server
 JAVA_OPTS="-Xms8192M -Xmx8192M"
