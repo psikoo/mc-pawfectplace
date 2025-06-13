@@ -2,7 +2,7 @@ services:
   papermc:
     container_name: papermc
     image: alpine:latest
-    command: ["./mc.sh"]
+    command: ["cd", "papermc", "&&", "ls"]
     restart: always
     ports:
       - "25565:25565"
