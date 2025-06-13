@@ -1,11 +1,5 @@
 FROM alpine:latest
 
-ENV MC_VERSION="latest" \
-    PAPER_BUILD="latest" \
-    EULA="false" \
-    MC_RAM="" \
-    JAVA_OPTS=""
-
 COPY mc.sh .
 RUN apk update \
     && apk add libstdc++ \
