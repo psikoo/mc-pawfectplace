@@ -9,4 +9,4 @@ services:
       - "25565:25565"
     volumes:
       - /papermc
-      - ./mc.sh:/papermc
+      - ./mc.sh:/papermc/mc.sh
